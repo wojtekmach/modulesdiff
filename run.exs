@@ -6,9 +6,8 @@ for module <- modules do
 
   case docs[:moduledoc] do
     {_, moduledoc} when is_binary(moduledoc) ->
-      IO.puts "## #{inspect module}"
       for {{fun, arity}, _, _kind, _, _doc} <- docs[:docs] do
-        IO.puts "* #{fun}/#{arity}"
+        IO.puts "#{inspect module}.#{fun}/#{arity}"
       end
 
       IO.puts ""
