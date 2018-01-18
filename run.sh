@@ -4,7 +4,7 @@
 # Run from within git repository.
 
 versions="v1.0 v1.1 v1.2 v1.3 v1.4 v1.5 v1.6 master"
-pairs="v1.0,v1.1 v1.1,v1.2 v1.3,v1.4 v1.4,v1.5 v1.5,v1.6 v1.6,master"
+pairs="v1.0,v1.1 v1.1,v1.2 v1.2,v1.3 v1.3,v1.4 v1.4,v1.5 v1.5,v1.6 v1.6,master"
 run_exs=${0/.sh/.exs}
 
 for v in $versions; do
